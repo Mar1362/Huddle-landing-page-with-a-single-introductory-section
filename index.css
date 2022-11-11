@@ -17,10 +17,12 @@ main{
     width: 90%;
     margin: auto;
     padding-top: 3%;
+    padding-right: 0;
 }
 
 .logo{
-    max-width: 50%;
+    margin-top: 1%;
+    max-width: 40%;
 }
 .logo img{
     max-width: 100%;
@@ -30,7 +32,7 @@ main{
     margin-top: 20%;
 }
 .illustration img{
-    max-width: 100%;
+    width: 100%;
 }
 
 .block{
@@ -61,7 +63,7 @@ main{
     margin-top: 10%;
     padding: 3%;
     width: 60%;
-    border-radius: 20px;
+    border-radius: 100px;
     border: none;
 }
 .block__btn a{
@@ -88,6 +90,9 @@ main{
 .block__footer__parag a{
     text-decoration: none;
     color: white;
+    padding: 2%;
+    border-radius: 50%;
+    border: 1px solid white;
 }
 
 body > footer p{
@@ -107,36 +112,45 @@ body > footer p a{
         background-size: cover;
     }
 
-    
+    .logo{
+        max-width: 18%;
+    }
     .block, .illustration{
         display: inline-block;
         padding: 0;
-        margin: 8% 0;
-        width: 49%;
+        margin: 6.5% 0;
         vertical-align: top;
     }
 
+    .illustration{
+        width: 58.8%;
+    }
+
     .block{
-        padding: 3% 0 0 5%;
+        padding: 3.7% 0 0 3.8%;
         text-align: start;
+        width: 39%;
     }
 
     .block__title{
         text-align: start;
-        font-size: xx-large;
+        font-size: 2.6rem;
     }
 
     .block__parag{
         text-align: start;
-        margin-top: 4%;
+        line-height: 1.3em;
+        margin-top: 5.8%;
     }
 
     .block__btn{
-        max-width: 40%;
+        max-width: 47%;
         margin-top: 4%;
+        padding: 4.5%;
     }
     
     .block__footer__parag{
         text-align: right;
+        margin-top:  45%;
     }
 }
