@@ -1,0 +1,142 @@
+:root  {
+    --color-violet: hsl(257, 40%, 49%);
+    --color-magenta: hsl(300, 69%, 71%);
+}
+
+*, *::after, *::before{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background: url(images/bg-mobile.svg) no-repeat, var(--color-violet) ;
+    background-size: cover;
+}
+main{
+    width: 90%;
+    margin: auto;
+    padding-top: 3%;
+}
+
+.logo{
+    max-width: 50%;
+}
+.logo img{
+    max-width: 100%;
+}
+
+.illustration{
+    margin-top: 20%;
+}
+.illustration img{
+    max-width: 100%;
+}
+
+.block{
+    padding: 10%;
+    margin-top: 10%;
+    text-align: center;
+}
+
+.block__title{
+    color: white;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    text-align: center;
+    font-size: x-large;
+}
+
+.block__parag{
+    margin-top: 5%;
+    color: lightgray;
+    text-align: center;
+    padding: 1%;
+    font-family: "Poppins", auto;
+    line-height: 1.3em;
+    font-size: medium;
+}
+
+.block__btn{
+    margin-top: 10%;
+    padding: 3%;
+    width: 60%;
+    border-radius: 20px;
+    border: none;
+}
+.block__btn a{
+    color: var(--color-violet);
+    text-decoration: none;
+    font-size: 1rem;
+}
+.block__btn:hover{
+    background-color: var(--color-magenta);
+}
+.block__btn:hover a{
+    color: white;
+}
+
+.block__footer{
+    margin-top: 20%;
+    word-spacing: 10px;
+}
+
+.block__footer__parag{
+    word-spacing: 1.2em;
+}
+
+.block__footer__parag a{
+    text-decoration: none;
+    color: white;
+}
+
+body > footer p{
+    color: whitesmoke;
+    padding: 1%;
+}
+
+body > footer p a{
+    color: lightblue !important;
+    letter-spacing: 2px;
+}   
+
+@media only screen and (min-width: 700px){
+
+    body{
+        background: url(images/bg-desktop.svg) no-repeat, var(--color-violet);
+        background-size: cover;
+    }
+
+    
+    .block, .illustration{
+        display: inline-block;
+        padding: 0;
+        margin: 8% 0;
+        width: 49%;
+        vertical-align: top;
+    }
+
+    .block{
+        padding: 3% 0 0 5%;
+        text-align: start;
+    }
+
+    .block__title{
+        text-align: start;
+        font-size: xx-large;
+    }
+
+    .block__parag{
+        text-align: start;
+        margin-top: 4%;
+    }
+
+    .block__btn{
+        max-width: 40%;
+        margin-top: 4%;
+    }
+    
+    .block__footer__parag{
+        text-align: right;
+    }
+}
